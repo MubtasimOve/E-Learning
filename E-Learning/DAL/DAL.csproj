@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EF\Model\Course.cs" />
+    <Compile Include="EF\Model\Lesson.cs" />
+    <Compile Include="EF\Model\Parent.cs" />
+    <Compile Include="EF\Model\Student.cs" />
+    <Compile Include="EF\Model\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
