@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DAL.EF.Model
 {
-    class Lesson
+    public class Lesson
     {
+        public int Id { get; set; }
+        public string Titel { get; set; }
+        public string Descriotion { get; set; }
+        public string File { get; set; }
+
     }
 }
