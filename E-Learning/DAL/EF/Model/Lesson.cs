@@ -12,6 +12,7 @@ namespace DAL.EF.Model
         public string Titel { get; set; }
         public string Descriotion { get; set; }
         public string File { get; set; }
+        public string upload { get; set; }
 
     }
 }
