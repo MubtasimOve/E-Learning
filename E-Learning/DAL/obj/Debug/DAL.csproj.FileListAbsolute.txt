@@ -1,0 +1,14 @@
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\bin\Debug\DAL.dll.config
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\bin\Debug\DAL.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\bin\Debug\DAL.pdb
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.pdb
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.Migrations.table.resources
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

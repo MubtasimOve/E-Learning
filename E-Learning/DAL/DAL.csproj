@@ -52,16 +52,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EF\APIContext.cs" />
     <Compile Include="EF\Model\Course.cs" />
     <Compile Include="EF\Model\Lesson.cs" />
+    <Compile Include="EF\Model\Notice.cs" />
     <Compile Include="EF\Model\Parent.cs" />
     <Compile Include="EF\Model\Student.cs" />
     <Compile Include="EF\Model\Teacher.cs" />
+    <Compile Include="Migrations\202308101333289_table.cs" />
+    <Compile Include="Migrations\202308101333289_table.designer.cs">
+      <DependentUpon>202308101333289_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202308101333289_table.resx">
+      <DependentUpon>202308101333289_table.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
