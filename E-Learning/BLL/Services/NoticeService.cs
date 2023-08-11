@@ -64,9 +64,9 @@ namespace BLL.Services
         }
         public static List<NoticeDTO> GetByName(string title)
         {
-            var data = (from l in DataAccessFactory.NoticeDataAccess().Get()
-                        where l.Title == title
-                        select l).ToList();
+            var data = (from n in DataAccessFactory.NoticeDataAccess().Get()
+                        where n.Title == title
+                        select n).ToList();
             var config = new MapperConfiguration(cfg => {
                 cfg.CreateMap<Notice, NoticeDTO>();
             });
