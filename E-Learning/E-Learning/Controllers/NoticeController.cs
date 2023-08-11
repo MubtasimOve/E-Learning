@@ -9,16 +9,16 @@ using System.Web.Http;
 
 namespace E_Learning.Controllers
 {
-    public class AdminController : ApiController
+    public class NoticeController : ApiController
     {
         [HttpPost]
-        [Route("api/lesson/add")]
-        
-        public HttpResponseMessage Add(LessonDTO obj)
+        [Route("api/Notice/add")]
+
+        public HttpResponseMessage Add(NoticeDTO obj)
         {
             try
             {
-                var data = lessonService.Add(obj);
+                var data = NoticeService.Add(obj);
                 return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Created" });
             }
             catch (Exception ex)
@@ -28,12 +28,12 @@ namespace E_Learning.Controllers
 
         }
         [HttpGet]
-        [Route("api/lesson/all")]
+        [Route("api/Notice/all")]
         public HttpResponseMessage All()
         {
             try
             {
-                var data = lessonService.Get();
+                var data = NoticeService.Get();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -43,12 +43,12 @@ namespace E_Learning.Controllers
 
         }
         [HttpGet]
-        [Route("api/lesson/delete/{id}")]
+        [Route("api/Notice/delete/{id}")]
         public HttpResponseMessage Delete(int id)
         {
             try
             {
-                var data = lessonService.Delete(id);
+                var data = NoticeService.Delete(id);
 
                 return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "deleted" });
             }
@@ -58,12 +58,12 @@ namespace E_Learning.Controllers
             }
         }
         [HttpPost]
-        [Route("api/lesson/update")]
-        public HttpResponseMessage update(LessonDTO obj)
+        [Route("api/Notice/update")]
+        public HttpResponseMessage update(NoticeDTO obj)
         {
             try
             {
-                var data = lessonService.Update(obj);
+                var data = NoticeService.Update(obj);
                 return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "updated" });
             }
             catch (Exception ex)
@@ -72,12 +72,12 @@ namespace E_Learning.Controllers
             }
         }
         [HttpGet]
-        [Route("api/lesson/get/{id}")]
+        [Route("api/Notice/get/{id}")]
         public HttpResponseMessage Get(int id)
         {
             try
             {
-                var data = lessonService.Get(id);
+                var data = NoticeService.Get(id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -86,7 +86,7 @@ namespace E_Learning.Controllers
             }
         }
         [HttpGet]
-        [Route("api/lesson/title/{name}")]
+        [Route("api/notice/title/{name}")]
         public HttpResponseMessage GetByName(string title)
         {
             try
@@ -94,14 +94,14 @@ namespace E_Learning.Controllers
                 var data = false;
                 if (data == true)
                 {
-                    lessonService.GetByName(title);
+                    NoticeService.GetByName(title);
                     return Request.CreateResponse(HttpStatusCode.OK, data);
                 }
                 else
                 {
                     return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = "Not Found" });
                 }
-                    
+
             }
             catch (Exception ex)
             {

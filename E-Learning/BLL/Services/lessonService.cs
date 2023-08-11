@@ -12,6 +12,7 @@ namespace BLL.Services
 {
     public class lessonService
     {
+
         public static LessonDTO Add(LessonDTO obj)
         {
             var config = new MapperConfiguration(cfg =>
@@ -21,14 +22,52 @@ namespace BLL.Services
             });
             var mapper = new Mapper(config);
             var conv = mapper.Map<Lesson>(obj);
-            var rs = DataAccessFactory.LessonDataAcess().Create(conv);
+            var rs = DataAccessFactory.LessonDataAccess().Create(conv);
 
             return mapper.Map<LessonDTO>(rs);
 
         }
         public static List<LessonDTO> Get()
         {
-            var data = DataAccessFactory.LessonDataAcess().Get();
+            var data = DataAccessFactory.LessonDataAccess().Get();
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<Lesson, LessonDTO>();
+            });
+            var mapper = new Mapper(config);
+            var cnvrt = mapper.Map<List<LessonDTO>>(data);
+            return cnvrt;
+        }
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.LessonDataAccess().Delete(id);
+        }
+        public static bool Update(LessonDTO obj)
+        {
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<LessonDTO, Lesson>();
+            });
+            var mapper = new Mapper(config);
+            var conv = mapper.Map<Lesson>(obj);
+            var rs = DataAccessFactory.LessonDataAccess().Update(conv);
+
+            return rs;
+        }
+        public static LessonDTO Get(int id)
+        {
+            var data = DataAccessFactory.LessonDataAccess().Get(id);
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<Lesson, LessonDTO>();
+            });
+            var mapper = new Mapper(config);
+            var cnvrt = mapper.Map<LessonDTO>(data);
+            return cnvrt;
+        }
+        public static List<LessonDTO> GetByName(string title)
+        {
+            var data = (from l in DataAccessFactory.LessonDataAccess().Get()
+                        where l.Title == title
+                        select l).ToList();
             var config = new MapperConfiguration(cfg => {
                 cfg.CreateMap<Lesson, LessonDTO>();
             });
