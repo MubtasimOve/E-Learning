@@ -29,7 +29,7 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Title = c.String(),
-                        Descriotion = c.String(),
+                        Description = c.String(),
                         File = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
