@@ -12,27 +12,32 @@ namespace DAL.Repos
     {
         public bool Create(Lesson obj)
         {
-            throw new NotImplementedException();
+            db.Lessons.Add(obj);
+            return db.SaveChanges() > 0;
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var db_obj = Get(id);
+            db.Lessons.Remove(db_obj);
+            return db.SaveChanges() > 0;
         }
 
         public List<Lesson> Get()
         {
-            throw new NotImplementedException();
+            return db.Lessons.ToList();
         }
 
         public Lesson Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Lessons.Find(id);
         }
 
         public bool Update(Lesson obj)
         {
-            throw new NotImplementedException();
+            var db_obj = Get(obj.Id);
+            db.Entry(db_obj).CurrentValues.SetValues(obj);
+            return db.SaveChanges() > 0;
         }
     }
 }
