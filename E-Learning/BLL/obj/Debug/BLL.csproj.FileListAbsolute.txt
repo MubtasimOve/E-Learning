@@ -26,3 +26,17 @@ C:\Users\sazza\OneDrive\Desktop\Asp .net\E-Learning\E-Learning\BLL\obj\Debug\BLL
 C:\Users\sazza\OneDrive\Desktop\Asp .net\E-Learning\E-Learning\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\sazza\OneDrive\Desktop\Asp .net\E-Learning\E-Learning\BLL\obj\Debug\BLL.dll
 C:\Users\sazza\OneDrive\Desktop\Asp .net\E-Learning\E-Learning\BLL\obj\Debug\BLL.pdb
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\BLL.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\BLL.pdb
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\DAL.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\DAL.pdb
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\DAL.dll.config
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\obj\Debug\BLL.dll
+C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\BLL\obj\Debug\BLL.pdb
