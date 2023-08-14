@@ -35,7 +35,10 @@ namespace DAL
         {
             return new StudentRepo();
         }
-
+        public static IRepo <Registration,int ,bool>RegistrationDataAccess()
+        {
+            return new RegistrationRepo();
+        }
 
     }
 }
