@@ -49,6 +49,7 @@
     <Compile Include="DTOs\LessonDTO.cs" />
     <Compile Include="DTOs\NoticeDTO.cs" />
     <Compile Include="DTOs\ParentDTO.cs" />
+    <Compile Include="DTOs\RegistrationDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
     <Compile Include="DTOs\TeacherDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Services\lessonService.cs" />
     <Compile Include="Services\NoticeService.cs" />
     <Compile Include="Services\ParentService.cs" />
+    <Compile Include="Services\RegistrationService.cs" />
     <Compile Include="Services\StudentService.cs" />
     <Compile Include="Services\TeacherService.cs" />
   </ItemGroup>

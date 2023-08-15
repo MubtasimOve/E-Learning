@@ -57,12 +57,13 @@
     <Compile Include="EF\Model\Lesson.cs" />
     <Compile Include="EF\Model\Notice.cs" />
     <Compile Include="EF\Model\Parent.cs" />
+    <Compile Include="EF\Model\Registration.cs" />
     <Compile Include="EF\Model\Student.cs" />
     <Compile Include="EF\Model\Teacher.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202308111606093_new.cs" />
-    <Compile Include="Migrations\202308111606093_new.designer.cs">
-      <DependentUpon>202308111606093_new.cs</DependentUpon>
+    <Compile Include="Migrations\202308141337290_Registration.cs" />
+    <Compile Include="Migrations\202308141337290_Registration.designer.cs">
+      <DependentUpon>202308141337290_Registration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Repos\LessonRepo.cs" />
     <Compile Include="Repos\NoticeRepo.cs" />
     <Compile Include="Repos\ParentRepo.cs" />
+    <Compile Include="Repos\RegistrationRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\StudentRepo.cs" />
     <Compile Include="Repos\TeacherRepo.cs" />
@@ -79,8 +81,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202308111606093_new.resx">
-      <DependentUpon>202308111606093_new.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308141337290_Registration.resx">
+      <DependentUpon>202308141337290_Registration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
