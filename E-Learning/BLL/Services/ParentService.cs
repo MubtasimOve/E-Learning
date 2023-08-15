@@ -12,7 +12,7 @@ namespace BLL.Services
 {
     public class ParentService
     {
-        public static ParentDTO Add(ParentDTO obj)
+        public static bool Add(ParentDTO obj)
         {
             var config = new MapperConfiguration(cfg =>
             {
@@ -21,9 +21,10 @@ namespace BLL.Services
             });
             var mapper = new Mapper(config);
             var conv = mapper.Map<Parent>(obj);
-            var rs = DataAccessFactory.ParentDataAccess().Create(conv);
+            var s = DataAccessFactory.ParentDataAccess().Create(conv);
 
-            return mapper.Map<ParentDTO>(rs);
+            ParentDTO rs = mapper.Map<ParentDTO>(s);
+            return s;
 
         }
         public static List<ParentDTO> Get()
