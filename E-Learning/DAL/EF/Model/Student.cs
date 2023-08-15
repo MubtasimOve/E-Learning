@@ -16,6 +16,7 @@ namespace DAL.EF.Model
         public string lname { set; get; }
         public string email { set; get; }
         public string age { set; get; }
+
         [ForeignKey("Parent")]
         public int PId { get; set; }
         public virtual Parent Parent{get; set;}
