@@ -9,12 +9,12 @@ using System.Web.Http;
 
 namespace E_Learning.Controllers
 {
-    public class RegistrationContoller : ApiController
+    public class RegistrationController : ApiController
     {
         [HttpPost]
         [Route("api/Registration/add")]
-        
-        public HttpResponseMessage Add(RegistratioDTO obj)
+
+        public HttpResponseMessage Add(RegistrationDTO obj)
         {
             try
             {
@@ -41,6 +41,72 @@ namespace E_Learning.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
 
+        }
+        [HttpGet]
+        [Route("api/Registration/delete/{id}")]
+        public HttpResponseMessage Delete(int id)
+        {
+            try
+            {
+                var data = RegistrationService.Delete(id);
+
+                return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "deleted" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        [HttpPost]
+        [Route("api/Registration/update")]
+        public HttpResponseMessage update(RegistrationDTO obj)
+        {
+            try
+            {
+                var data = RegistrationService.Update(obj);
+                return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "updated" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/Registration/get/{id}")]
+        public HttpResponseMessage Get(int id)
+        {
+            try
+            {
+                var data = RegistrationService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/Registration/name/{name}")]
+        public HttpResponseMessage GetByName(string name)
+        {
+            try
+            {
+                var data = false;
+                if (data == true)
+                {
+                    RegistrationService.GetByName(name);
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = "Not Found" });
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
     }
 }

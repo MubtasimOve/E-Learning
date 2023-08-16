@@ -12,7 +12,7 @@ namespace BLL.Services
 {
     public class TeacherService
     {
-        public static TeacherDTO Add(TeacherDTO obj)
+        public static bool Add(TeacherDTO obj)
         {
             var config = new MapperConfiguration(cfg =>
             {
@@ -23,7 +23,7 @@ namespace BLL.Services
             var conv = mapper.Map<Teacher>(obj);
             var rs = DataAccessFactory.TeacherDataAccess().Create(conv);
 
-            return mapper.Map<TeacherDTO>(rs);
+            return mapper.Map<bool>(rs);
 
         }
         public static List<TeacherDTO> Get()
