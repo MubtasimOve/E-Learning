@@ -17,6 +17,7 @@ namespace DAL.EF
         public DbSet<Student> Students { set; get; }
         public DbSet<Teacher> Teachers { set; get; }
         public DbSet<Registration> Registrations { set; get; }
+        public DbSet<Token> Token { set; get; }
 
     }
 }
