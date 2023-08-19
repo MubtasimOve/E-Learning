@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Registration : DbMigration
+    public partial class _new : DbMigration
     {
         public override void Up()
         {
@@ -74,10 +74,10 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
+                        Username = c.String(),
                         Email = c.String(),
-                        Address = c.String(),
-                        Phone = c.String(),
+                        Password = c.String(),
+                        Type = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
