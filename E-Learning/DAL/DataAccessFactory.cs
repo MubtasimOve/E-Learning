@@ -39,6 +39,14 @@ namespace DAL
         {
             return new RegistrationRepo();
         }
+        public static IRepo<Token, int, Token> TokenDataAccess()
+        {
+            return new TokenRepo();
+        }
+        public static IAuth AuthDataAccess()
+        {
+            return new RegistrationRepo();
+        }
 
     }
 }

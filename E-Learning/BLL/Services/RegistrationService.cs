@@ -62,17 +62,6 @@ namespace BLL.Services
             var cnvrt = mapper.Map<RegistrationDTO>(data);
             return cnvrt;
         }
-        public static List<RegistrationDTO> GetByName(string name)
-        {
-            var data = (from p in DataAccessFactory.RegistrationDataAccess().Get()
-                        where p.Name == name
-                        select p).ToList();
-            var config = new MapperConfiguration(cfg => {
-                cfg.CreateMap<Registration, RegistrationDTO>();
-            });
-            var mapper = new Mapper(config);
-            var cnvrt = mapper.Map<List<RegistrationDTO>>(data);
-            return cnvrt;
-        }
+      
     }
 }
