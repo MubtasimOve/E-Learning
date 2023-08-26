@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using E_Learning.AuthFilters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +10,28 @@ using System.Web.Http;
 
 namespace E_Learning.Controllers
 {
+    [Teacher]
+    [Logged]
+
+
     public class TeacherController : ApiController
     {
+
         [HttpPost]
+
         [Route("api/Teacher/add")]
 
         public HttpResponseMessage Add(TeacherDTO obj)
         {
             try
             {
+
+                var token = Request.Headers.Authorization.ToString();
+                var teacherID = AuthService.IsTeacher(token);
                 var data = TeacherService.Add(obj);
                 return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Created" });
+
+               
             }
             catch (Exception ex)
             {
@@ -27,12 +39,15 @@ namespace E_Learning.Controllers
             }
 
         }
+       
         [HttpGet]
         [Route("api/Teacher/all")]
         public HttpResponseMessage All()
         {
             try
             {
+
+                var token = Request.Headers.Authorization.ToString();
                 var data = TeacherService.Get();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }

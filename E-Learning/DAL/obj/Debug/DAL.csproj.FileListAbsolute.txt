@@ -41,3 +41,17 @@ C:\Users\sazza\OneDrive\Desktop\Asp .net\project\E-learning\E-Learning\E-Learnin
 C:\Users\sazza\OneDrive\Desktop\Asp .net\project\E-learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.Migrations.token.resources
 C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.Migrations.New.resources
 C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+G:\E-Learning\E-Learning\E-Learning\DAL\bin\Debug\DAL.dll.config
+G:\E-Learning\E-Learning\E-Learning\DAL\bin\Debug\DAL.dll
+G:\E-Learning\E-Learning\E-Learning\DAL\bin\Debug\DAL.pdb
+G:\E-Learning\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.dll
+G:\E-Learning\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\E-Learning\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.xml
+G:\E-Learning\E-Learning\E-Learning\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\E-Learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+G:\E-Learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.Migrations.New.resources
+G:\E-Learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+G:\E-Learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\E-Learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.csproj.CopyComplete
+G:\E-Learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.dll
+G:\E-Learning\E-Learning\E-Learning\DAL\obj\Debug\DAL.pdb
