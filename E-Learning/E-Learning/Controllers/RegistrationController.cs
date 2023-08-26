@@ -85,28 +85,6 @@ namespace E_Learning.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
-        [HttpGet]
-        [Route("api/Registration/name/{name}")]
-        public HttpResponseMessage GetByName(string name)
-        {
-            try
-            {
-                var data = false;
-                if (data == true)
-                {
-                    RegistrationService.GetByName(name);
-                    return Request.CreateResponse(HttpStatusCode.OK, data);
-                }
-                else
-                {
-                    return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = "Not Found" });
-                }
-
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
-            }
-        }
+       
     }
 }

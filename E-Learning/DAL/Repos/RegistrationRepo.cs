@@ -8,8 +8,17 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class RegistrationRepo : Repo, IRepo<Registration, int, bool>
+    internal class RegistrationRepo : Repo, IRepo<Registration, int, bool>,IAuth
     {
+        public Registration Authenticate(string username, string password)
+        {
+            var data = from r in db.Registrations
+                       where r.Username.Equals(username)
+                       && r.Password.Equals(password)
+                       select r;
+            return data.SingleOrDefault();
+        }
+
         public bool Create(Registration obj)
         {
             db.Registrations.Add(obj);

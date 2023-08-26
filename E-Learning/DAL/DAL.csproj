@@ -60,10 +60,12 @@
     <Compile Include="EF\Model\Registration.cs" />
     <Compile Include="EF\Model\Student.cs" />
     <Compile Include="EF\Model\Teacher.cs" />
+    <Compile Include="EF\Model\Token.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202308141337290_Registration.cs" />
-    <Compile Include="Migrations\202308141337290_Registration.designer.cs">
-      <DependentUpon>202308141337290_Registration.cs</DependentUpon>
+    <Compile Include="Migrations\202308261355380_New.cs" />
+    <Compile Include="Migrations\202308261355380_New.designer.cs">
+      <DependentUpon>202308261355380_New.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,14 +77,15 @@
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\StudentRepo.cs" />
     <Compile Include="Repos\TeacherRepo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202308141337290_Registration.resx">
-      <DependentUpon>202308141337290_Registration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308261355380_New.resx">
+      <DependentUpon>202308261355380_New.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
