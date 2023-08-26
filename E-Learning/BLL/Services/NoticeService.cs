@@ -12,7 +12,7 @@ namespace BLL.Services
 {
     public class NoticeService
     {
-        public static NoticeDTO Add(NoticeDTO obj)
+        public static bool Add(NoticeDTO obj)
         {
             var config = new MapperConfiguration(cfg =>
             {
@@ -23,7 +23,7 @@ namespace BLL.Services
             var conv = mapper.Map<Notice>(obj);
             var rs = DataAccessFactory.NoticeDataAccess().Create(conv);
 
-            return mapper.Map<NoticeDTO>(rs);
+            return mapper.Map<bool>(rs);
 
         }
         public static List<NoticeDTO> Get()

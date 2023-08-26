@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _new : DbMigration
+    public partial class New : DbMigration
     {
         public override void Up()
         {
@@ -70,6 +70,18 @@
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.Registrations",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Username = c.String(),
+                        Email = c.String(),
+                        Password = c.String(),
+                        Type = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.Students",
                 c => new
                     {
@@ -84,17 +96,35 @@
                 .ForeignKey("dbo.Parents", t => t.PId, cascadeDelete: true)
                 .Index(t => t.PId);
             
+            CreateTable(
+                "dbo.Tokens",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        TokenKey = c.String(),
+                        CreatedAt = c.DateTime(nullable: false),
+                        ExpiredAt = c.DateTime(),
+                        UId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Registrations", t => t.UId, cascadeDelete: true)
+                .Index(t => t.UId);
+            
         }
         
         public override void Down()
         {
+            DropForeignKey("dbo.Tokens", "UId", "dbo.Registrations");
             DropForeignKey("dbo.Students", "PId", "dbo.Parents");
             DropForeignKey("dbo.Courses", "TId", "dbo.Teachers");
             DropForeignKey("dbo.Courses", "LId", "dbo.Lessons");
+            DropIndex("dbo.Tokens", new[] { "UId" });
             DropIndex("dbo.Students", new[] { "PId" });
             DropIndex("dbo.Courses", new[] { "LId" });
             DropIndex("dbo.Courses", new[] { "TId" });
+            DropTable("dbo.Tokens");
             DropTable("dbo.Students");
+            DropTable("dbo.Registrations");
             DropTable("dbo.Parents");
             DropTable("dbo.Notices");
             DropTable("dbo.Teachers");

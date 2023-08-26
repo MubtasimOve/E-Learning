@@ -12,7 +12,7 @@ namespace BLL.Services
 {
     public class ParentService
     {
-        public static ParentDTO Add(ParentDTO obj)
+        public static bool Add(ParentDTO obj)
         {
             var config = new MapperConfiguration(cfg =>
             {
@@ -23,13 +23,14 @@ namespace BLL.Services
             var conv = mapper.Map<Parent>(obj);
             var rs = DataAccessFactory.ParentDataAccess().Create(conv);
 
-            return mapper.Map<ParentDTO>(rs);
+            return mapper.Map<bool>(rs);
 
         }
         public static List<ParentDTO> Get()
         {
             var data = DataAccessFactory.ParentDataAccess().Get();
-            var config = new MapperConfiguration(cfg => {
+            var config = new MapperConfiguration(cfg =>
+            {
                 cfg.CreateMap<Parent, ParentDTO>();
             });
             var mapper = new Mapper(config);
@@ -55,7 +56,8 @@ namespace BLL.Services
         public static ParentDTO Get(int id)
         {
             var data = DataAccessFactory.ParentDataAccess().Get(id);
-            var config = new MapperConfiguration(cfg => {
+            var config = new MapperConfiguration(cfg =>
+            {
                 cfg.CreateMap<Parent, ParentDTO>();
             });
             var mapper = new Mapper(config);
@@ -67,7 +69,8 @@ namespace BLL.Services
             var data = (from p in DataAccessFactory.ParentDataAccess().Get()
                         where p.fname == fname
                         select p).ToList();
-            var config = new MapperConfiguration(cfg => {
+            var config = new MapperConfiguration(cfg =>
+            {
                 cfg.CreateMap<Parent, ParentDTO>();
             });
             var mapper = new Mapper(config);
@@ -76,3 +79,18 @@ namespace BLL.Services
         }
     }
 }
+    
+      /*  public static ParentDTO Create(ParentDTO obj) // Need To Be Sure About This
+        {
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Parent, ParentDTO>();
+                c.CreateMap<ParentDTO, Parent>();
+            });
+            var mapper = new Mapper(cfg);
+            var data = mapper.Map<Parent>(obj);
+            var result = DataAccessFactory.ParentDataAccess().Create(data);
+            var redata = mapper.Map<ParentDTO>(result);
+            return redata;
+        }
+    }*/
