@@ -114,5 +114,19 @@ namespace E_Learning.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
-    }
+        [HttpGet]
+        [Route("api/Course/lessons/{courseName}")]
+        public HttpResponseMessage GetLessonsByCourseName(string courseName)
+        {
+            try
+            {
+                var data = lessonService.GetLessonsByCourseName(courseName);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+      }
 }

@@ -75,5 +75,19 @@ namespace BLL.Services
             var cnvrt = mapper.Map<List<LessonDTO>>(data);
             return cnvrt;
         }
+        public static List<LessonDTO> GetLessonsByCourseName(string courseName)
+        {
+            var data = (from c in DataAccessFactory.CourseDataAccess().Get()
+                        where c.Name == courseName
+                        select c.Lesson).ToList();
+
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<Lesson, LessonDTO>();
+            });
+            var mapper = new Mapper(config);
+            var convertedLessons = mapper.Map<List<LessonDTO>>(data.Select(c => c.Courses).ToList());
+
+            return convertedLessons;
+        }
     }
 }
