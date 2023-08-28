@@ -16,6 +16,7 @@ namespace DAL.Repos
                        where r.Username.Equals(username)
                        && r.Password.Equals(password)
                        select r;
+                
             return data.SingleOrDefault();
         }
 

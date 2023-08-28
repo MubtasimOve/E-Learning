@@ -15,5 +15,10 @@ namespace DAL.EF.Model
         public string Email { set; get; }
         public string Address { set; get; }
         public string Phone { set; get; }
+        public virtual ICollection<Course> Courses { get; set; }
+        public Teacher()
+        {
+            Courses = new List<Course>();
+        }
     }
 }

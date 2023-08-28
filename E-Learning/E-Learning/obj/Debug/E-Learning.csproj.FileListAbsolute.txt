@@ -305,3 +305,8 @@ G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.csproj.CoreC
 G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.csproj.CopyComplete
 G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.dll
 G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.pdb
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\DAL.dll
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\AutoMapper.dll
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\DAL.pdb
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\DAL.dll.config
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\AutoMapper.xml

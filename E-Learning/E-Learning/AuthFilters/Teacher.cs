@@ -20,14 +20,12 @@ namespace E_Learning.AuthFilters
             }
             else
             {
-                var token = header.ToString();
+                var token = header.Parameter.ToString();
                if (token != null && !AuthService.IsTeacher(token))
                 {
                     actionContext.Response = actionContext.Request.CreateResponse(System.Net.HttpStatusCode.Unauthorized, new { Msg = "Supplied token in invalid or expired" });
                 }
             
-
-           // base.OnAuthorization(actionContext);
             }
             base.OnAuthorization(actionContext);
         }

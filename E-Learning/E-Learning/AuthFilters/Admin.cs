@@ -9,7 +9,7 @@ using System.Web.Http.Filters;
 
 namespace E_Learning.AuthFilters
 {
-    public class Student : AuthorizationFilterAttribute
+    public class Admin : AuthorizationFilterAttribute
     {
         public override void OnAuthorization(HttpActionContext actionContext)
         {
@@ -21,13 +21,12 @@ namespace E_Learning.AuthFilters
             else
             {
                 var token = header.Parameter.ToString();
-                if (token != null && !AuthService.IsTeacher(token))
+                if (token != null && !AuthService.IsAdmin(token))
                 {
                     actionContext.Response = actionContext.Request.CreateResponse(System.Net.HttpStatusCode.Unauthorized, new { Msg = "Supplied token in invalid or expired" });
                 }
-            }
 
-            base.OnAuthorization(actionContext);
+            }
             base.OnAuthorization(actionContext);
         }
     }

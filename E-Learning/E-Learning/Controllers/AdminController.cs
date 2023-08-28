@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using E_Learning.AuthFilters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace E_Learning.Controllers
 {
     public class AdminController : ApiController
     {
+        [Teacher]
         [HttpPost]
         [Route("api/lesson/add")]
-        
         public HttpResponseMessage Add(LessonDTO obj)
         {
             try
@@ -42,6 +43,9 @@ namespace E_Learning.Controllers
             }
 
         }
+
+
+        [Teacher]
         [HttpGet]
         [Route("api/lesson/delete/{id}")]
         public HttpResponseMessage Delete(int id)
@@ -57,6 +61,8 @@ namespace E_Learning.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+
+        [Teacher]
         [HttpPost]
         [Route("api/lesson/update")]
         public HttpResponseMessage update(LessonDTO obj)

@@ -15,6 +15,11 @@ namespace DAL.EF.Model
         public string lname { set; get; }
         public string phone { set; get; }
         public string address { set; get; }
+        public virtual ICollection<Student> Students { get; set; }
+        public Parent()
+        {
+            Students = new List<Student>();
+        }
 
     }
 }

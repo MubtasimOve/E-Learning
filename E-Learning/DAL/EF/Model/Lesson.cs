@@ -14,6 +14,11 @@ namespace DAL.EF.Model
         public string Title { get; set; }
         public string Description { get; set; }
         public string File { get; set; }
+        public virtual ICollection<Course> Courses { get; set; }
+        public Lesson()
+        {
+            Courses = new List<Course>();
+        }
 
     }
 }
