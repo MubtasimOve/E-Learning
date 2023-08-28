@@ -112,5 +112,46 @@ namespace E_Learning.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        [HttpGet]
+        [Route("api/Parent/student/{studentName}")]
+        public HttpResponseMessage GetParentDetailsByStudentName(string studentName)
+        {
+            try
+            {
+                var data = StudentService.GetParentDetailsByStudentName(studentName);
+                if (data.Count > 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { Msg = "Not Found" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/Student/parent/{studentId}")]
+        public HttpResponseMessage GetParentByStudentId(int studentId)
+        {
+            try
+            {
+                var parent = StudentService.GetParentByStudentId(studentId);
+
+                if (parent == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { Msg = "Student not found" });
+                }
+
+                return Request.CreateResponse(HttpStatusCode.OK, parent);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }

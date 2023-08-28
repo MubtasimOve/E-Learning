@@ -74,5 +74,19 @@ namespace BLL.Services
             var cnvrt = mapper.Map<List<NoticeDTO>>(data);
             return cnvrt;
         }
+        public static List<NoticeDTO> GetByDate(DateTime date)
+        {
+            var data = (from n in DataAccessFactory.NoticeDataAccess().Get()
+                        where n.Date.Date == date.Date
+                        select n).ToList();
+
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<Notice, NoticeDTO>();
+            });
+            var mapper = new Mapper(config);
+            var convertedNotices = mapper.Map<List<NoticeDTO>>(data);
+
+            return convertedNotices;
+        }
     }
 }

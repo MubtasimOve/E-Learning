@@ -114,5 +114,26 @@ namespace E_Learning.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        [HttpGet]
+        [Route("api/Notice/date/{date}")]
+        public HttpResponseMessage GetNoticesByDate(string date)
+        {
+            try
+            {
+                if (DateTime.TryParse(date, out DateTime parsedDate))
+                {
+                    var notices = NoticeService.GetByDate(parsedDate);
+                    return Request.CreateResponse(HttpStatusCode.OK, notices);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, new { Msg = "Invalid date format" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }
