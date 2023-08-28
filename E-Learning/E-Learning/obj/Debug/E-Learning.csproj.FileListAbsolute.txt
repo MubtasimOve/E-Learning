@@ -227,3 +227,86 @@ C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\E-Learning\obj\Deb
 C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.csproj.CopyComplete
 C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.dll
 C:\Users\Mubtasim Ihtisham\source\repos\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.pdb
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\E-Learning.dll.config
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\E-Learning.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\E-Learning.pdb
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\csc.exe
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\csc.exe.config
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\csc.rsp
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\csi.exe
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\csi.exe.config
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\csi.rsp
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.Managed.Core.targets
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.AppContext.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Collections.Immutable.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Console.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Globalization.Calendars.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.IO.Compression.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.IO.FileSystem.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Net.Http.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Net.Sockets.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Reflection.Metadata.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.ValueTuple.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Xml.XmlDocument.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Xml.XPath.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\vbc.exe
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\vbc.exe.config
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\vbc.rsp
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\VBCSCompiler.exe
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\roslyn\VBCSCompiler.exe.config
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\BLL.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\EntityFramework.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\EntityFramework.SqlServer.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\Newtonsoft.Json.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\System.Net.Http.Formatting.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\System.Web.Http.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\System.Web.Http.WebHost.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\DAL.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\AutoMapper.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\BLL.pdb
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\EntityFramework.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\EntityFramework.SqlServer.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\Newtonsoft.Json.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\System.Net.Http.Formatting.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\System.Web.Http.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\System.Web.Http.WebHost.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\DAL.pdb
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\DAL.dll.config
+G:\E-Learning\E-Learning\E-Learning\E-Learning\bin\AutoMapper.xml
+G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.csproj.AssemblyReference.cache
+G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.csproj.CoreCompileInputs.cache
+G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.csproj.CopyComplete
+G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.dll
+G:\E-Learning\E-Learning\E-Learning\E-Learning\obj\Debug\E-Learning.pdb
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\DAL.dll
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\AutoMapper.dll
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\DAL.pdb
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\DAL.dll.config
+C:\Users\sazza\OneDrive\Desktop\Asp .net\Project\E-Learning\E-Learning\E-Learning\bin\AutoMapper.xml

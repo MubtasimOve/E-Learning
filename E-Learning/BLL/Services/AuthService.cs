@@ -24,7 +24,8 @@ namespace BLL.Services
                 token.ExpiredAt = null;
                 var tk = DataAccessFactory.TokenDataAccess().Create(token);
 
-                var config = new MapperConfiguration(cfg => {
+                var config = new MapperConfiguration(cfg =>
+                {
                     cfg.CreateMap<Token, TokenDTO>();
                 });
                 var mapper = new Mapper(config);
@@ -45,6 +46,47 @@ namespace BLL.Services
             }
             return false;
         }
-        
+
+        public static bool IsTeacher(string token)
+        {
+            var tk = (from t in DataAccessFactory.TokenDataAccess().Get()
+                      where t.TokenKey.Equals(token)
+                      && t.ExpiredAt == null
+                      && t.Registration.Type.Equals("Teacher")
+                      select t).SingleOrDefault();
+            return tk != null;
+        }
+
+
+        public static bool IsStudent(string token)
+        {
+            var tk = (from t in DataAccessFactory.TokenDataAccess().Get()
+                      where t.TokenKey.Equals(token)
+                      && t.ExpiredAt == null
+                      && t.Registration.Type.Equals("Student")
+                      select t).SingleOrDefault();
+            return tk != null;
+        }
+
+
+        public static bool IsParent(string token)
+        {
+            var tk = (from t in DataAccessFactory.TokenDataAccess().Get()
+                      where t.TokenKey.Equals(token)
+                      && t.ExpiredAt == null
+                      && t.Registration.Type.Equals("Parent")
+                      select t).SingleOrDefault();
+            return tk != null;
+        }
+        public static bool IsAdmin(string token)
+        {
+            var tk = (from t in DataAccessFactory.TokenDataAccess().Get()
+                      where t.TokenKey.Equals(token)
+                      && t.ExpiredAt == null
+                      && t.Registration.Type.Equals("Admin")
+                      select t).SingleOrDefault();
+            return tk != null;
+        }
+
     }
 }
